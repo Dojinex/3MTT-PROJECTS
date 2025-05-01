@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your one-stop solution for amazing experiences">
+    <title>Welcome to Our Service | Landing Page</title>
+    <style>
+        :root {
+            --primary-color: #ff5733;
+            --primary-hover: #e04e2b;
+            --heading-color: #3498db; /* New color variable for the heading */
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        header {
+            background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+        }
+        
+        h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 1rem;
+            color: var(--heading-color); /* Applied the new color here */
+        }
+        
+        .hero p {
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            margin-bottom: 2rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 0.8em 1.6em;
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            border: none;
+            background-color: var(--primary-color);
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .cta-button:hover,
+        .cta-button:focus {
+            background-color: var(--primary-hover);
+            outline: 2px solid white;
+        }
+        
+        @media (max-width: 600px) {
+            header {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero" role="banner" aria-label="Main hero section">
+        <div class="hero-content">
+            <h1>Welcome to Our Service</h1>
+            <p>Your one-stop solution for amazing experiences.</p>
+            <a href="#signup" class="cta-button" role="button">Sign Up Now</a>
+        </div>
+    </header>
+
+    <main id="signup">
+        <!-- Additional content would go here -->
+    </main>
+</body>
+</html>
